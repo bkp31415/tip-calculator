@@ -13,19 +13,49 @@
     />
 
     <title>Frontend Mentor | Tip calculator app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="/index.css" />
   </head>
   <body>
     <div class="container">
       <div class="left">
-        <div class="bill"></div>
-        <div class="select"></div>
-        <div class="people"></div>
+        <p class="p-left">Bill</p>
+        <div class="bill">
+          <div class="logo-bill"></div>
+          <p class="psize">0</p>
+        </div>
+        <p class="p-left">Select Tip %</p>
+        <div class="select">
+          <button>5%</button>
+          <button>10%</button>
+          <button>15%</button>
+          <button>25%</button>
+          <button>50%</button>
+          <input type="text" name="custom" id="custom" placeholder="Custom" />
+        </div>
+        <div class="people">
+          <p class="p-left">Number of People</p>
+          <!-- <div class="logo-people"></div> -->
+          <input type="text" id="text" placeholder="0" />
+        </div>
       </div>
 
       <div class="right">
-        <div class="amount"></div>
-        <div class="total"></div>
+        <div class="amount">
+          <div class="tip">Tip Amount <br />/ person</div>
+          <div class="value">$0.00</div>
+        </div>
+        <div class="total">
+          <div class="tot">Total <br />/ person</div>
+          <div class="value">$0.00</div>
+        </div>
+        <button class="reset">RESET</button>
       </div>
     </div>
 
